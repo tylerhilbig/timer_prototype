@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Neopolitan Prototype</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -12,15 +12,19 @@
 
     <div class="main-content">
         <div class="dashboard">
+            <button id="start-button">Start</button>
+            <button id="pause-button">Pause</button>
+            <button id="reset-button">Reset</button>
+            
             <div class="timer-content">
                 <div>
                     <h2>Productivity</h2>
-                    <p class="timer">24:00</p>
+                    <p class="timer" id="productivity-timer">24:00</p>
                     <button>Add Time</button>
                 </div>
                 <div>
                     <h2>Break</h2>
-                    <p class="timer">5:00</p>
+                    <p class="timer" id="break-timer">5:00</p>
                     <button>Start Break</button>
                 </div>
             </div>
@@ -36,8 +40,8 @@
 
         <div class="stats-content">
             <h2> Today's Productivity </h2>
-            <p> Time Working: 00:00 </p>
-            <p> Time on Break: 00:00 </p>
+            <p id="work-total"> Time Working: 00:00 </p>
+            <p id="break-total"> Time on Break: 00:00 </p>
             <p> Prouctivity: 100% </p>
             <p> Tasks Completed: 0 </p>
             <p> Tasks Remaining: 0 </p>
@@ -46,6 +50,6 @@
     
     
     
-
+<script src="index.js"></script>
 </body>
 </html>
